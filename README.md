@@ -13,14 +13,6 @@
 * Fond avec effet Acrylique/Verre.
 * Disposition arrondie.
 
-## ⚙️ Installation
-
-> Utilise un terminal Bash ou PowerShell.
-
-```bash
-cd ~/AppData/Roaming/FlowLauncher/Themes && curl -o OnsetGlazev2.xaml https://raw.githubusercontent.com/HugoLapresse/onsetGlazev2.flow/main/OnsetGlazev2.xaml
-```
-
 > Va dans **Paramètres de Flow Launcher > Thème** et sélectionne **OnsetGlazev2** comme thème.
 
 <img src="https://user-images.githubusercontent.com/87414003/208308621-1c151998-c78f-4d08-9baa-5f52e2f4e1a7.png" alt="" width="800">
