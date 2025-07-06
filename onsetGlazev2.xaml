@@ -1,13 +1,11 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Métadonnées du thème, obligatoires pour Flow Launcher -->
     <x:String x:Key="ThemeInfo.Name">Midnight Custom</x:String>
     <x:String x:Key="ThemeInfo.Author">Hugo Lapresse</x:String>
     <x:String x:Key="ThemeInfo.Version">2.0</x:String>
     <x:String x:Key="ThemeInfo.Description">Modern midnight-inspired dark theme, compatible with Flow Launcher 2025+ theme system.</x:String>
 
-    <!-- Brushes attendus par Flow Launcher (voir doc officielle) -->
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#22232a"/>
     <SolidColorBrush x:Key="ResultBackgroundBrush" Color="#2b2c34"/>
     <SolidColorBrush x:Key="ResultSelectedBackgroundBrush" Color="#19c9c9fb"/>
@@ -27,19 +25,15 @@
     <SolidColorBrush x:Key="PreviewGlyphBrush" Color="#bebec1"/>
     <SolidColorBrush x:Key="TransparentBrush" Color="#00FFFFFF"/>
 
-    <!-- Epaisseur et arrondis génériques -->
     <CornerRadius x:Key="ItemRadius">8</CornerRadius>
     <Thickness x:Key="ItemMargin">10 0 10 0</Thickness>
     <Thickness x:Key="ResultMargin">0 0 0 10</Thickness>
 
-    <!-- Styles personnalisés pour Flow Launcher (optionnels mais recommandés pour un rendu cohérent) -->
-    <!-- Résultat sélectionné : fond, titre, sous-titre -->
     <Style x:Key="ResultSelectedStyle" TargetType="{x:Type ListBoxItem}">
         <Setter Property="Background" Value="{StaticResource ResultSelectedBackgroundBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ResultSelectedForegroundBrush}"/>
     </Style>
 
-    <!-- Box de recherche -->
     <Style x:Key="QueryBoxStyle" TargetType="{x:Type TextBox}">
         <Setter Property="Foreground" Value="{StaticResource QueryBoxForegroundBrush}"/>
         <Setter Property="Background" Value="{StaticResource QueryBoxBackgroundBrush}"/>
@@ -55,7 +49,6 @@
         <Setter Property="Height" Value="38"/>
     </Style>
 
-    <!-- Titre, sous-titre, glyphes -->
     <Style x:Key="ResultTitleStyle" TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="{StaticResource ResultForegroundBrush}"/>
     </Style>
@@ -75,7 +68,6 @@
         <Setter Property="Foreground" Value="{StaticResource PreviewGlyphBrush}"/>
     </Style>
 
-    <!-- Hotkeys -->
     <Style x:Key="ItemHotkeyStyle" TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="{StaticResource ItemHotkeyBrush}"/>
         <Setter Property="FontSize" Value="12"/>
@@ -85,14 +77,12 @@
         <Setter Property="FontSize" Value="12"/>
     </Style>
 
-    <!-- Séparateur -->
     <Style x:Key="SeparatorStyle" TargetType="{x:Type Rectangle}">
         <Setter Property="Fill" Value="{StaticResource HighlightBrush}"/>
         <Setter Property="Height" Value="1"/>
         <Setter Property="Margin" Value="0,0,0,8"/>
     </Style>
 
-    <!-- Bordure fenêtre -->
     <Style x:Key="WindowBorderStyle" TargetType="{x:Type Border}">
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
@@ -105,7 +95,6 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
     </Style>
 
-    <!-- ScrollBar et Thumb -->
     <Style x:Key="ScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="Background" Value="{StaticResource ScrollBarBrush}"/>
     </Style>
@@ -119,7 +108,6 @@
         </Setter>
     </Style>
 
-    <!-- Search Icon -->
     <Style x:Key="SearchIconStyle" TargetType="{x:Type Path}">
         <Setter Property="Fill" Value="{StaticResource HighlightBrush}"/>
         <Setter Property="Width" Value="24"/>
@@ -133,7 +121,6 @@
         <Setter Property="HorizontalAlignment" Value="Right"/>
     </Style>
 
-    <!-- Clock/Preview -->
     <Style x:Key="ClockPanel" TargetType="{x:Type StackPanel}">
         <Setter Property="Margin" Value="0,0,54,0"/>
     </Style>
@@ -154,7 +141,6 @@
         <Setter Property="Foreground" Value="{StaticResource ResultSubTitleForegroundBrush}"/>
     </Style>
 
-    <!-- Ligne en attente (optionnel) -->
     <Style x:Key="PendingLineStyle" TargetType="{x:Type Line}" />
 
 </ResourceDictionary>
